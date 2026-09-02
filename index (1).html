@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Ayush Jha — Postdoctoral Scholar in Quantitative Finance, Texas Tech University.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayush Jha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..600;1,400..600&display=swap">
+<link rel="stylesheet" href="./styles.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; -webkit-font-smoothing: antialiased; }
+  a { color: var(--color-accent-700); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 40%, transparent); }
+  a:hover { color: var(--color-accent-600); border-bottom-color: var(--color-accent); }
+  .pubcard { border: 1px solid var(--color-divider); border-radius: var(--radius-md); padding: 27.6px 27.6px 18.4px; background: transparent; }
+  .pubcard + .pubcard { margin-top: 13.8px; }
+  .pubcard h3 { font-size: 22px; line-height: 1.2; margin: 0 0 9.2px; letter-spacing: -0.01em; }
+  .pubcard .who { font-size: 13.5px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 13.8px; }
+  .pubcard .venue { font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; font-variant-numeric: tabular-nums; color: var(--color-accent-700); margin: 0 0 9.2px; }
+  .pubcard .abs { margin: 0; padding-top: 13.8px; border-top: 1px dashed color-mix(in srgb, var(--color-text) 18%, transparent); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 40%, transparent); }
+  .kicker { font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-variant-numeric: tabular-nums; color: color-mix(in srgb, var(--color-text) 50%, transparent); margin: 0 0 18.4px; }
+  .navlink { font-family: var(--font-heading); font-size: 15px; letter-spacing: 0.04em; padding: 4.6px 0; border-bottom: 1px solid transparent; color: var(--color-text); text-decoration: none; }
+  .navlink:hover { border-bottom-color: var(--color-accent); color: var(--color-accent-700); }
+  .navlink[aria-current="page"] { border-bottom-color: var(--color-accent); }
+  .lede { font-size: 17px; line-height: 1.72; text-align: justify; hyphens: auto; text-wrap: pretty; }
+  .courselist { list-style: none; margin: 0; padding: 0; display: grid; gap: 9.2px; }
+  .courselist li { display: grid; grid-template-columns: 108px 1fr; gap: 18.4px; font-size: 14.5px; line-height: 1.6; padding-bottom: 9.2px; border-bottom: 1px solid var(--color-divider); }
+  .courselist li span:first-child { font-variant-numeric: tabular-nums; letter-spacing: 0.03em; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+  @media (max-width: 720px) {
+    .courselist li { grid-template-columns: 1fr; gap: 2px; }
+    .lede { text-align: left; }
+  }
+  @media (max-width: 720px) {
+    main { padding-left: 18.4px !important; padding-right: 18.4px !important; }
+    main section { grid-template-columns: 1fr !important; gap: 27.6px !important; }
+    main section h1 { font-size: 40px !important; }
+    header > div, footer > div { padding-left: 18.4px !important; padding-right: 18.4px !important; }
+    figure#portrait { max-width: 240px; }
+    .pubcard { padding-left: 18.4px !important; padding-right: 18.4px !important; }
+    .pubcard h3 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: var(--color-bg)">
+
+  <header style="position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--color-divider)">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 18.4px 36.8px; display: flex; align-items: baseline; justify-content: space-between; gap: 27.6px; flex-wrap: wrap">
+      <a href="#/" class="navlink" style="font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: none">Ayush&nbsp;Jha</a>
+      <nav style="display: flex; align-items: baseline; gap: 27.6px; flex-wrap: wrap">
+        <a href="#/" class="navlink" data-nav="/">Home</a>
+        <a href="#/research" class="navlink" data-nav="/research">Research</a>
+        <a href="#/teaching" class="navlink" data-nav="/teaching">Teaching</a>
+        <a href="./Ayush_Jha_CV.pdf" target="_blank" rel="noopener" class="navlink" style="color: var(--color-accent-700)">CV&nbsp;↓</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex: 1; max-width: 1000px; width: 100%; margin: 0 auto; padding: 0 36.8px 110px; box-sizing: border-box">
+
+    <div data-route="/">
+    <div>
+      <section style="display: grid; grid-template-columns: 1fr 260px; gap: 55px; align-items: start; padding: 92px 0 55px">
+        <div>
+          <p class="kicker">Postdoctoral Scholar · Texas Tech University</p>
+          <h1 style="font-size: 62px; font-weight: 400; line-height: 1.02; margin: 0 0 27.6px; letter-spacing: -0.02em">Ayush Jha</h1>
+          <p style="font-size: 20px; line-height: 1.5; font-style: italic; color: color-mix(in srgb, var(--color-text) 72%, transparent); margin: 0 0 36.8px; max-width: 30ch">Quantitative finance and financial economics — asset pricing, derivatives, and machine learning in markets.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 13.8px">
+            <a href="mailto:ayush.jha@ttu.edu" class="btn btn-primary" style="border-bottom: 1px solid var(--color-accent)">ayush.jha@ttu.edu</a>
+            <a href="https://www.linkedin.com/in/ayush-jha-phd-75674b197/" target="_blank" rel="noopener" class="btn btn-secondary" style="border-bottom: 1px solid var(--color-divider); color: var(--color-text)">LinkedIn</a>
+            <a href="./Ayush_Jha_CV.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="border-bottom: 1px solid var(--color-divider); color: var(--color-text)">Curriculum Vitae</a>
+          </div>
+        </div>
+        <figure id="portrait" style="margin: 0">
+          <div style="display: flex; aspect-ratio: 4 / 5; border: 6px solid var(--color-surface); outline: 1px solid var(--color-divider); align-items: center; justify-content: center; text-align: center; padding: 18.4px; box-sizing: border-box; background: repeating-linear-gradient(135deg, transparent 0 7px, color-mix(in srgb, var(--color-text) 6%, transparent) 7px 8px)">
+            <span style="font-family: ui-monospace, monospace; font-size: 11px; line-height: 1.7; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 45%, transparent)">portrait —<br>PHOTO.png<br>beside index.html</span>
+          </div>
+        </figure>
+      </section>
+
+      <hr class="hr" style="margin: 27.6px 0 55px">
+
+      <section style="display: grid; grid-template-columns: 210px 1fr; gap: 55px; padding-bottom: 74px">
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 5px 0 0; color: color-mix(in srgb, var(--color-text) 55%, transparent)">About</h2>
+        <div>
+          <p class="lede" style="color: color-mix(in srgb, var(--color-text) 45%, transparent); font-style: italic">I received a Ph.D. in Economics from the Department of Economics at Texas Tech University in 2026. Currently, I am a Postdoctoral Scholar in the Department of Mathematics & Statistics at Texas Tech University, sponsored by Svetlozar (Zari) Rachev.
+
+          <p class="lede" style="color: color-mix(in srgb, var(--color-text) 45%, transparent); font-style: italic">My research interests lie at the intersection of financial economics and artificial intelligence, with a broader focus on financial markets, uncertainty, and systemic risk. My work examines how information, technology, and uncertainty shape financial systems and economic decision-making. My research statement is to advance our understanding of financial systems and systemic risk in an uncertain world. <code style="font-family: ui-monospace, monospace; font-size: 14px">index.html</code>.</p>
+</p>
+        </div>
+      </section>
+
+      <hr class="hr" style="margin: 0 0 55px">
+
+      <section style="display: grid; grid-template-columns: 210px 1fr; gap: 55px; padding-bottom: 74px">
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 5px 0 0; color: color-mix(in srgb, var(--color-text) 55%, transparent)">Research interests</h2>
+        <div>
+          <p class="lede" style="margin: 0 0 27.6px">Asset pricing; financial econometrics; derivatives and fixed-income valuation; portfolio choice and risk management; financial markets; machine learning and artificial intelligence in finance.</p>
+          <a href="#/research" style="font-family: var(--font-heading); font-size: 16px; letter-spacing: 0.03em">Browse publications and working papers →</a>
+        </div>
+      </section>
+
+      <hr class="hr" style="margin: 0 0 55px">
+
+      <section style="display: grid; grid-template-columns: 210px 1fr; gap: 55px">
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 5px 0 0; color: color-mix(in srgb, var(--color-text) 55%, transparent)">Education</h2>
+        <ul class="courselist">
+          <li><span>2026</span><span><strong style="font-weight: 600">Ph.D. Economics (2026)</strong> — Texas Tech University</span></li>
+          <li><span>2022</span><span><strong style="font-weight: 600">B.A. (Hons) Political Science</strong>, minor in Economics — University of Delhi, India</span></li>
+        </ul>
+      </section>
+    </div>
+    </div>
+
+    <div data-route="/research" hidden>
+    <div>
+      <section style="padding: 92px 0 55px; max-width: 40ch">
+        <p class="kicker">Research</p>
+        <h1 style="font-size: 52px; font-weight: 400; line-height: 1.05; margin: 0; letter-spacing: -0.02em">Publications &amp; papers</h1>
+      </section>
+
+      <section style="padding-bottom: 74px">
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 27.6px; padding-bottom: 13.8px; border-bottom: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 55%, transparent)">Published papers</h2>
+
+        <article class="pubcard">
+          <p class="venue">Journal of Behavioral and Experimental Finance · 2026 · Vol. 51, 101212</p>
+          <h3>Household Interest in Artificial Intelligence for Financial Advice: Evidence from the United States</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, and Hassan A. Butt</p>
+          <p class="abs">Examines U.S. households’ interest in AI-based financial advice using nationally representative 2024 NFCS data. Finds that digital readiness, risk preferences, and behavioral frictions are key drivers of AI advice adoption.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">Frontiers of Mathematical Finance · 2026 · Vol. 9, 41–66</p>
+          <h3>Option Pricing under Stochastic Volatility and Jumps: A PIDE Framework with Empirical Evidence</h3>
+          <p class="who">Ayush Jha, Abigail Mensah, Hongwei Mei, Rui Wang, Svetlozar Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Develops a PIDE framework for option pricing with stochastic volatility and jumps, applied to S&P 500 index options across maturities. Finds that stochastic volatility drives most pricing gains, while jumps provide modest improvements mainly for short-maturity, deep OTM options.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">Journal of Financial Data Science · 2026</p>
+          <h3>Reinforcement Learning for Strategic Asset Allocation: Why the Objective Function Dominates the Agent Architecture</h3>
+          <p class="who">Ayush Jha</p>
+          <p class="abs">Examines what drives reinforcement-learning asset allocation performance across agent design, investment objectives, and rebalancing frequency. Finds that objective choice dominates performance, while frequent rebalancing helps preserve the value of forward-looking signals.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">The Journal of Fixed Income · 2026 · Vol. 35(3), 6–17</p>
+          <h3>Option-Implied Probabilities and Bond Valuation</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Examines risk-neutral asymmetries in short-rate lattices using option-implied probabilities across maturities and market conditions. Finds that imposing symmetric probabilities leads to bond mispricing, biased return forecasts, and less effective hedging, while option-implied probabilities improve valuation and risk management.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">The Journal of Fixed Income · 2026 · Vol. 35(4), 7–24</p>
+          <h3>Equity-Imposed Tilts in Affine Term Structure Models: Evidence from Option-Implied Asymmetries</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Develops a tilted AFNS model that incorporates option-implied asymmetries into yield-curve dynamics. Finds that these asymmetries improve yield-curve forecasts and capture economically meaningful variation in term premiums.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">The Journal of Portfolio Management · 2025 · Vol. 52(2), 212</p>
+          <h3>Demystifying FinBERT: How Transformer Models Turn Financial Text into Market Insights</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, and Hassan A. Butt</p>
+          <p class="abs">Demonstrates how FinBERT transforms financial news into actionable sentiment signals for portfolio and risk analysis. Provides a practical workflow for linking headline sentiment to intraday stock-price movements.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">Journal of Risk and Financial Management · 2025 · Vol. 18(1):11</p>
+          <h3>Beyond the Traditional VIX: A Novel Approach to Identifying Uncertainty Shocks in Financial Markets</h3>
+          <p class="who">Ayush Jha, Abootaleb Shirvani, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Develops a heavy-tail-aware measure of financial uncertainty using a double-subordinated Normal Inverse Gaussian model of S&P 500 returns. Introduces risk–reward measures that improve the identification of uncertainty shocks in financial markets.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">Journal of Risk and Financial Management · 2025 · Vol. 18(3):158</p>
+          <h3>Optimizing Portfolios with Pakistan-Exposed Exchange-Traded Funds: Risk and Performance Insight</h3>
+          <p class="who">Ali Jaffri, Abootaleb Shirvani, Ayush Jha, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Examines Pakistan-exposed ETFs from 2016–2024, assessing their risks, performance, and diversification benefits for international investors. Compares historical and dynamic portfolio optimization to evaluate how adaptive strategies perform in an emerging-market setting.
+</p>
+        </article>
+      </section>
+
+      <section style="padding-bottom: 74px">
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 27.6px; padding-bottom: 13.8px; border-bottom: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 55%, transparent)">New Working papers</h2>
+
+
+          <article class="pubcard">
+          <p class="venue">September (2026)</p>
+          <h3>Agentic AI and Real-Time Market Disequilibrium</h3>
+          <p class="who">Ayush Jha</p>
+          <p class="abs">Coming Soon.</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">September (2026)</p>
+          <h3>Robust Efficient Frontiers under Fixed-Point Variance Selection Rule</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, Svetlozar Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Coming Soon.</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">August (2026)</p>
+          <h3>Attention Traps</h3>
+          <p class="who">Ayush Jha</p>
+          <p class="abs">Develops a model of misspecified learning with endogenous information acquisition, in which rationally inattentive agents choose what evidence to process based on their maintained model. Shows that attention constraints can sustain persistent mispricing—including in AI-related valuation—because additional capacity may reduce inattention without resolving model misspecification.
+</p>
+        </article>
+
+          <article class="pubcard">
+          <p class="venue">July (2026)</p>
+          <h3>Joint Identification of Beliefs and Preferences from Point and Density Forecasts</h3>
+          <p class="who">Ayush Jha and Frank Fabozzi</p>
+          <p class="abs">Examines what can be learned from jointly observing point and density forecasts, distinguishing beliefs, preferences, and forecast reporting behavior within a rank-dependent utility framework. Shows that joint forecasts provide additional identification, while some Survey of Professional Forecasters responses are inconsistent with standard preference and admissibility restrictions.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">July (2026)</p>
+          <h3>State-Dependent Portfolio Choice under Policy-Regime Switching: Evidence from Environmental, Social, and Governance Momentum Strategies</h3>
+          <p class="who">Ayush Jha, Abootaleb Shirvani, Ali Jaffri, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Develops a discrete-time portfolio framework with latent policy regimes in the market price of risk and long-memory FIGARCH volatility, extending dynamic programming to non-Markov volatility states. Applied to Russell 3000 portfolios during U.S. ESG policy transitions, the model finds regime-dependent risk pricing and a sign reversal in the winners–losers spread, implying state-contingent optimal allocation.
+</p>
+        </article>
+
+          <article class="pubcard">
+          <p class="venue">June (2026)</p>
+          <h3>How Professional Forecasters Compress Macroeconomic Tail Risks</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, Hassan A. Butt, and Frank Fabozzi.</p>
+          <p class="abs">Examines how professional forecasters allocate probability across future outcomes using density forecasts from the Survey of Professional Forecasters. Finds systematic tail-risk compression for GDP growth and core inflation, while beliefs for other variables remain close to benchmark predictive distributions.
+</p>
+        </article>
+
+         <article class="pubcard">
+          <p class="venue">May (2026)</p>
+          <h3>Distributional Granger Causality: Identification, Sequential Inference, and Adaptive Testing</h3>
+          <p class="who">Ayush Jha</p>
+          <p class="abs">Develops a framework for distributional Granger causality that captures predictive dependence through conditional means, volatility, tails, asymmetry, and other distributional channels. Introduces an adaptive sequential testing procedure with finite-sample error control and oracle-equivalent asymptotic power, providing a complete and computationally efficient approach to testing distributional predictive dependence.
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">February (2026)</p>
+          <h3>Social Media as an Investment Information Channel: Evidence from U.S. Households</h3>
+          <p class="who">Ali Jaffri, Ayush Jha, and Hassan A. Butt</p>
+          <p class="abs">Examines how platform-specific social media use shapes speculative retail trading using nationally representative 2024 U.S. household data. Finds that community-driven platforms such as Reddit, Discord, and Telegram are associated with greater meme-stock participation, while broadcast-oriented platforms and financial influencers show little predictive power.
+
+</p>
+
+        <article class="pubcard">
+          <p class="venue">January (2026)</p>
+          <h3>Forecasting Flash Crashes with Subordinated Lévy Processes</h3>
+          <p class="who">Ali Jaffri, Abootaleb Shirvani, Ayush Jha, Svetlozar Rachev, and Frank Fabozzi</p>
+          <p class="abs">Develops an intraday framework for forecasting S&P 500 flash crashes using one-minute returns and a double-subordinated Lévy process with stochastic trading intensity and heavy-tailed risk. Shows that model-based tail-risk forecasts, combined with structural-break, downside-risk, and distance-based indicators, can provide economically meaningful warning signals up to 30 minutes before crash onset.
+
+</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">October (2025)</p>
+          <h3>The Ticketmaster and Live Nation Saga: A Robust Merger Analysis</h3>
+          <p class="who">Noah Liptack, Ali Jaffri, Ayush Jha, and Michael D. Noel</p>
+          <p class="abs">Examines the impact of the 2010 Live Nation–Ticketmaster merger on concert ticket prices using multiple empirical approaches. Finds substantial and persistent price increases, highlighting the need for stronger merger scrutiny and systematic post-merger evaluation.
+</p>
+        </article>
+        
+        <article class="pubcard">
+          <p class="venue">Financial Innovation · Revise &amp; Resubmit</p>
+          <h3>Behavioral Probability Weighting and Portfolio Optimization under Semi-Heavy Tails</h3>
+          <p class="who">Ayush Jha, Abootaleb Shirvani, Ali Jaffri, Svetlozar T. Rachev, and Frank J. Fabozzi</p>
+          <p class="abs">Develops a portfolio optimization framework that extracts implied probability weighting functions from optimal portfolios under Gaussian and NIG return distributions. Shows that fat-tailed returns and changing risk-free rates amplify belief distortions, with implications for portfolio risk management under extreme market conditions.
+</p>
+        </article>
+
+       
+      </section>
+
+      <section>
+        <h2 style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 27.6px; padding-bottom: 13.8px; border-bottom: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 55%, transparent)">Books &amp; monographs</h2>
+
+        <article class="pubcard">
+          <p class="venue">Chapman and Hall / CRC · 2027 · 1st edition</p>
+          <h3>Microstructure, Statistical Fluctuations, and Technical Signals in Rational Asset Pricing</h3>
+          <p class="who">Jha, A., Jaffri, A., Lindquist, W. B., Rachev, S., Boakye, R., Hettiachchi-Halpe-Kankanamalage, D. C. W., &amp; Mensah, A.</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">World Scientific · Accepted</p>
+          <h3>Next-Generation Asset Pricing: Integrating Econometrics, Machine Learning, and AI</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, and Svetlozar Rachev</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">De Gruyter Brill · Accepted</p>
+          <h3>Risk Analysis and Portfolio Management for AI Innovation ETFs</h3>
+          <p class="who">Ayush Jha, Ali Muqadas Jaffri, Abootaleb Shirvani, Ting-Jung Lee, Thidini Mahanama, and Svetlozar T. Rachev</p>
+        </article>
+
+        <article class="pubcard">
+          <p class="venue">Cambridge Scholars Publishing · Accepted</p>
+          <h3>Behavioral Market Microstructure Factor Investing and Stochastic Discount Factor under Probability-Weighting Transformations</h3>
+          <p class="who">Ayush Jha, Ali Jaffri, Abootaleb Shirvani, Svetlozar Rachev, Farzana Afroz, and Nicholas Appiah</p>
+        </article>
+      </section>
+    </div>
+    </div>
+
+    <div data-route="/teaching" hidden>
+    <div>
+      <section style="padding: 92px 0 55px; max-width: 40ch">
+        <p class="kicker">Teaching</p>
+        <h1 style="font-size: 52px; font-weight: 400; line-height: 1.05; margin: 0; letter-spacing: -0.02em">Appointments &amp; courses</h1>
+      </section>
+
+      <section style="display: grid; grid-template-columns: 260px 1fr; gap: 55px; padding-bottom: 74px">
+        <div>
+          <h2 style="font-size: 24px; font-weight: 600; margin: 0 0 4.6px; letter-spacing: -0.01em">Postdoctoral Scholar</h2>
+          <p style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-variant-numeric: tabular-nums; color: var(--color-accent-700); margin: 0 0 9.2px">Sept 2026 – present</p>
+          <p style="font-size: 14px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0">Department of Mathematics &amp; Statistics, Texas Tech University</p>
+        </div>
+        <div>
+          <p class="kicker" style="margin-bottom: 13.8px">Instructor of record</p>
+          <ul class="courselist">
+            <li><span>MATH 2345</span><span>Intro to Statistics: Applications to Business — Fall ’26, Spring ’27</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="hr" style="margin: 0 0 55px">
+
+      <section style="display: grid; grid-template-columns: 260px 1fr; gap: 55px">
+        <div>
+          <h2 style="font-size: 24px; font-weight: 600; margin: 0 0 4.6px; letter-spacing: -0.01em">Graduate Part-Time Instructor</h2>
+          <p style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-variant-numeric: tabular-nums; color: var(--color-accent-700); margin: 0 0 9.2px">Jan 2023 – Aug 2026</p>
+          <p style="font-size: 14px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0">Department of Economics, Texas Tech University</p>
+        </div>
+        <div style="display: grid; gap: 46px">
+          <div>
+            <p class="kicker" style="margin-bottom: 13.8px">Instructor of record</p>
+            <ul class="courselist">
+              <li><span>ECO 4316</span><span>Managerial Economics with Financial Data Analysis — Summer ’26</span></li>
+              <li><span>ECO 2301</span><span>Principles of Microeconomics — Spring ’26, Fall ’25</span></li>
+              <li><span>ECO 2305</span><span>Principles of Economics — Summer II ’25, Spring ’25</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker" style="margin-bottom: 13.8px">Teaching assistant</p>
+            <ul class="courselist">
+              <li><span>ECO 2305</span><span>Principles of Economics — Fall ’24, Summer ’24</span></li>
+              <li><span>ECO 2301</span><span>Principles of Microeconomics — Fall ’24</span></li>
+              <li><span>ECO 3312</span><span>Intermediate Microeconomics — Fall ’23, Spring ’24. Taught the math camp on optimization and consumer theory by consent of instructor.</span></li>
+              <li><span>ECO 3302</span><span>Intermediate Macroeconomics — Summer ’23</span></li>
+              <li><span>Tutoring</span><span>Economics Tutoring Center for undergraduates — Spring ’23</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-divider); background: var(--color-bg)">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 46px 36.8px; display: flex; flex-wrap: wrap; gap: 27.6px; justify-content: space-between; align-items: baseline">
+      <div style="display: grid; gap: 4.6px">
+        <p style="margin: 0; font-family: var(--font-heading); font-size: 16px; letter-spacing: 0.04em">Ayush Jha</p>
+        <p style="margin: 0; font-size: 13px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 55%, transparent)">Department of Mathematics &amp; Statistics, Texas Tech University<br>Lubbock, Texas 79415 · +1 (806) 715 5640</p>
+      </div>
+      <div style="display: flex; gap: 18.4px; flex-wrap: wrap; font-size: 14px">
+        <a href="mailto:ayush.jha@ttu.edu">Email</a>
+        <a href="https://www.linkedin.com/in/ayush-jha-phd-75674b197/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="./Ayush_Jha_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+(function () {
+  var pages = document.querySelectorAll('[data-route]');
+  var links = document.querySelectorAll('.navlink[data-nav]');
+  function show() {
+    var r = location.hash.replace(/^#/, '') || '/';
+    var found = false;
+    pages.forEach(function (p) {
+      var on = p.getAttribute('data-route') === r;
+      p.hidden = !on;
+      if (on) found = true;
+    });
+    if (!found) { pages[0].hidden = false; r = '/'; }
+    links.forEach(function (a) {
+      if (a.getAttribute('data-nav') === r) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    document.title = r === '/research' ? 'Research — Ayush Jha'
+      : r === '/teaching' ? 'Teaching — Ayush Jha' : 'Ayush Jha';
+  }
+  window.addEventListener('hashchange', function () { show(); window.scrollTo(0, 0); });
+  show();
+  var probe = new Image();
+  probe.onload = function () {
+    var fig = document.getElementById('portrait');
+    if (!fig) return;
+    probe.alt = 'Ayush Jha';
+    probe.className = 'plate';
+    probe.style.cssText = 'width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:1px';
+    fig.replaceChildren(probe);
+  };
+  probe.src = './photo.jpg';
+})();
+</script>
+</body>
+</html>
